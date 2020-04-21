@@ -1,4 +1,15 @@
-# Contact Free Access Sensor
+<h1 align="center">
+  Contact Free Access Sensor
+  <br>
+</h1>
+
+<h4 align="center"> ITS8050 - 2nd Project (Spring 2020) </h4>
+
+<p align="center">
+  <img src="https://badgen.net/badge/build/passing/green">
+  </br>
+  </br>
+</p>
 
 **Authors**: ITS8050 Group G (Marco Hanisch, Romain Thollot, Antoine Pinon)
 
@@ -6,7 +17,7 @@
 
 ## Subject
 
-![Contact_Free_Access_Censor.png](ITS8050_-_Contact_Free_Access_Censor.png)
+![subject.png](IMG_DEMO/subject.png)
 
 ## Getting started
 
@@ -18,7 +29,7 @@ Having the ESP-IDF Frameworks and toolchain setup on your machine.
 
 ### Installing
 
-    git clone https://github.com/Graydevs/.git
+    git clone https://github.com/Graydevs/its8050-2020.git
 
 Then issue the standard command to *export IDF variables*, *setting the target*, changes the *board frequency* in the configuration, *build* and *flash* the device:
 
@@ -36,7 +47,7 @@ To complete this exercise, a relatively strong magnet is required. This was not 
 
 ### ESP32 Hall Measurement (Arduino IDE)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1f11fd2d-3de1-488f-b6b5-a93e43d06404/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1f11fd2d-3de1-488f-b6b5-a93e43d06404/Untitled.png)
+![ESP32_Hall_Measurement](IMG_DEMO/ESP32_Hall_Measurement.png)
 
 *Nota on ESP32 sensors*:
 
