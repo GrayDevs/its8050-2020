@@ -6,7 +6,7 @@
 
 ## Subject
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d10d26a0-e7b5-4ea3-97ba-b0eb1ba867cb/ITS8050_-_Contact_Free_Access_Censor.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d10d26a0-e7b5-4ea3-97ba-b0eb1ba867cb/ITS8050_-_Contact_Free_Access_Censor.png)
+![Contact_Free_Access_Censor.png](ITS8050_-_Contact_Free_Access_Censor.png)
 
 ## Getting started
 
@@ -52,7 +52,7 @@ The values gathered by the hall sensor can be erratic, starting this project, we
 
 In this example, the user will put the magnet near the esp32 board on the 3rd tick which will cause the button and access system state to change to 'Pressed' and 'Open' respectively
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ae68f5a-5680-4c77-b5a4-05bb6cb5c471/2020-04-21_00_23_22-Command_Prompt.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ae68f5a-5680-4c77-b5a4-05bb6cb5c471/2020-04-21_00_23_22-Command_Prompt.png)
+![IMG_DEMO/access_system_open.png](IMG_DEMO/access_system_open.png)
 
 Please note that we use a constant called `PRECISION` in our algorithm so that values that are slightly higher than the calibrated one can still act on the button/system. In this series of example, it is set to 5.
 
@@ -60,13 +60,13 @@ Please note that we use a constant called `PRECISION` in our algorithm so that v
 
 Here, a user open the system, then take the magnet away, before pressing the button again which cause the system to close. To achieve this, we simply store the `button_state` for *n*, *n-1* and *n-2* and then compare them. If they form a `++ — ++` pattern and the system is `Open`, then we can close the system.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/21168520-8b92-4a70-b98a-7a2e6ac3fd86/access_system_closed.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/21168520-8b92-4a70-b98a-7a2e6ac3fd86/access_system_closed.png)
+![IMG_DEMO/access_system_closed.png](IMG_DEMO/access_system_closed.png)
 
 ### Closing the Access System for inactivity
 
 In the below example, the user openned the system and let it run without pressing the button for 6 ticks. The system will then automatically close. This behavior is managed by a `timer` variable that is increased each ticks where nothing happens and resetted as soon as the button is pressed.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0e274127-f485-4047-9c10-8f2cab6bed94/access_system_inactive.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0e274127-f485-4047-9c10-8f2cab6bed94/access_system_inactive.png)
+![IMG_DEMO/access_system_inactive.png](IMG_DEMO/access_system_inactive.png)
 
 Again, the values gathered by the hall sensor are not relevant to a real situation with a working magnet but this is just an example to showcase how the program works. The test file have been prooved to work with a lot of other values and so should the main programm do.
 
