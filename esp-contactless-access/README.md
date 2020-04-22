@@ -13,8 +13,6 @@
 
 **Authors**: ITS8050 Group G (Marco Hanisch, Romain Thollot, Antoine Pinon)
 
-## Table of Content
-
 ## Subject
 
 ![subject.png](IMG_DEMO/subject.png)
